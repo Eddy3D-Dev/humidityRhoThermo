@@ -1,0 +1,2 @@
+wmake libso src/thermodynamic/basic
+wmake -all applications/solvers/heatTransfer/buoyantHumidityPimpleFoam

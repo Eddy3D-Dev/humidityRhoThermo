@@ -27,10 +27,17 @@ boundaryField
 
     inletTop 
     {
-        type            fixedHumidity;
+        type            userFixedHumidity;
         mode            relative;
         method          magnus;
-        humidity        0.50;
+        //humidity	0.5;
+        humidity        {
+        type	table;
+        values	(
+        	(0 0.1)
+        	(1 0.3)
+        );
+        }
         value           uniform 0.0;
     }
 

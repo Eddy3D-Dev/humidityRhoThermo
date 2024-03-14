@@ -30,7 +30,12 @@ boundaryField
         type            fixedHumidity;
         mode            relative;
         method          magnus;
-        humidity        0.50;
+        humidity        {
+        type	table;
+        values	(
+        	(0 0.1)
+        	(1 0.3)
+        );
         value           uniform 0.0;
     }
 

@@ -1,0 +1,6 @@
+SOURCE += humidityRhoThermo/humidityRhoThermo.C
+SOURCE += humidityRhoThermo/humidityRhoThermos.C
+SOURCE += derivedFvPatchFields/fixedHumidity/fixedHumidityFvPatchScalarField.C
+SOURCE += derivedFvPatchFields/userFixedHumidity/userFixedHumidityFvPatchScalarField.C
+
+LIB = $(FOAM_USER_LIBBIN)/libhumidityRhoThermo
