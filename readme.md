@@ -37,5 +37,5 @@ You are done. After that you can use the buoyantHumidityPimpleFoam solver.
 This project was sponsered by Tian Building Engineering
 
 # Rebuilt
-This version was initially created by Tobias Holzmann for OpenFOAM-v9 but needed to be changed and modified as the Foundation version was changed in addition.
+This version was initially created by Tobias Holzmann for OpenFOAM-v9 but needed to be changed and modified as the Foundation version was changed in addition. In the updated implementation, humidity values are read from a time-variant table, allowing for the specification of humidity levels that change over time. This approach employs the Function1<scalar> class, enabling the simulation to update the boundary condition at each time step based on predefined values in an external file or table. By incorporating time-dependent boundary conditions, the simulation can now more accurately reflect varying environmental conditions, enhancing the realism and applicability of the results.
 The rebuilt for the latest OpenFOAM-v9 version was done by Dr. Robert Castilla. Thanks for that.
